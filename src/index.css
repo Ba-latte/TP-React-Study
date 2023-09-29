@@ -1,0 +1,78 @@
+
+/* 변수 */
+:root {
+  /* 폰트 */
+  --font-SpoqaHanSansNeo: "Spoqa Han Sans Neo";
+  /* 컬러 */
+  --color-mainPink: #EC8F8F;
+  --color-mainGreen: #A4E3B6;
+  --color-subPink: #C77171;
+  --color-subGreen: #8BC29B;
+  --color-lightPink: #FFD4D4;
+  --color-lightGreen: #D2FFDF;
+  --color-9gray: #D9D9D9;
+  /* 글자 색상 */
+  --tpWhite: #FFFFFF;
+  --tpBlack: #282828;
+  --tpGray: #6C6C6C;
+}
+
+
+html, body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+body{
+  font-family: var(--font-SpoqaHanSansNeo);
+  color: var(--tpBlack);
+}
+a{
+  color: var(--tpBlack);
+  text-decoration: none;
+}
+ul, ol{
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style: none;
+}
+button{
+  all:unset;
+}
+
+input{
+  all: unset;
+}
+/* ~~ 인풋 요소 number 속성에서 화살표 없애기 ~~ */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+/* 폰트 CSS */
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Spoqa Han Sans Neo"),
+  url(./assets/font/SpoqaHanSansNeo-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  font-style: bold;
+  font-weight: 700;
+  src: local("Spoqa Han Sans Neo"),
+  url(./assets/font/SpoqaHanSansNeo-Bold.woff) format("woff");
+}
