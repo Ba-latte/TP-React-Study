@@ -6,8 +6,14 @@ let popupAddress = createSlice({
     initialState: false,
 });
 
+let userInfoState = createSlice({
+    name : "userInfoState",
+    initialState : "",
+});
+
 export default configureStore({
     reducer: {
         popupAddress : popupAddress.reducer,
+        userInfoState : userInfoState.reducer,
     }
 })
