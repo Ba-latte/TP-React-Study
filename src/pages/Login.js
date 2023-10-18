@@ -2,6 +2,7 @@
 
 import { useNavigate } from "react-router-dom";
 import styled, { css } from "styled-components";
+import KakaoLoginButton from "../components/KakaoLoginButton";
 
 const LogInSection = styled.section`
     width: 100%;
@@ -66,6 +67,12 @@ export default function LogIn(){
                         type="password"
                         placeholder="비밀번호"/>
                     <Button>로그인</Button>
+
+                    {/* 카카오 소셜 로그인 */}
+                    
+                    {/* 애플 소셜 로그인 */}
+                    
+                    {/* 회원가입, 아이디/비밀번호 찾기 */}
                     <div>
                         <SmallButton onClick={()=>{ navigate('/member') }}>회원가입</SmallButton>
                         <SmallButton onClick={()=>{}}>아이디/비밀번호 찾기</SmallButton>
